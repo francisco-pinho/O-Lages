@@ -26,7 +26,7 @@ export default function Header() {
           <div className="header-content">
             {/* Logo */}
             <Link href="/" className="logo">
-              🛒 SuperMercado
+              🛒 O Lages
             </Link>
             
             {/* Search bar */}
