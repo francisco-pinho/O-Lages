@@ -472,9 +472,10 @@ p {
 .newsletter {
     padding: 2.5rem 1rem;
     background: linear-gradient(135deg, var(--light-brown), var(--secondary-light-brown));
-    color: var(--white);
-    text-align: center;
-}
+        color: var(--white);
+        text-align: center;
+    }
+    
 
 .newsletter-title {
     font-size: 2.5rem;
@@ -738,7 +739,7 @@ p {
     }
 
     .card-content {
-        padding: 1rem;
+        height: 90px; /* altura menor para mobile */
     }
 
     .header-top {

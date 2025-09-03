@@ -15,7 +15,7 @@ export default function Home() {
                 Bem-vindo ao O Lages!
               </h1>
               <p className="hero-subtitle animate-slide-up">
-                Os melhores produtos com os melhores preços, entregue na sua casa!
+                Os melhores produtos com os melhores preços!
               </p>
               <button className="btn btn-primary">
                 Começar a Comprar 🛒
@@ -42,7 +42,7 @@ export default function Home() {
                 />
                 <div className="card-content" style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0,0,0,0.7)', color: 'white', padding: '1.5rem' }}>
                   <h3 className="card-title" style={{ color: 'white', marginBottom: '0.5rem' }}>Frutas & Verduras</h3>
-                  <p className="card-description" style={{ color: 'rgba(255,255,255,0.9)', marginBottom: 0 }}>Frescos e selecionados diariamente</p>
+                  <p className="card-description" style={{ color: 'rgba(255,255,255,0.9)', marginBottom: 0 }}>Selecionados diariamente</p>
                 </div>
               </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
                 />
                 <div className="card-content" style={{ position: 'absolute', bottom: 0, left: 0, right: 0, background: 'rgba(0,0,0,0.7)', color: 'white', padding: '1.5rem' }}>
                   <h3 className="card-title" style={{ color: 'white', marginBottom: '0.5rem' }}>Padaria</h3>
-                  <p className="card-description" style={{ color: 'rgba(255,255,255,0.9)', marginBottom: 0 }}>Pães frescos assados diariamente</p>
+                  <p className="card-description" style={{ color: 'rgba(255,255,255,0.9)', marginBottom: 0 }}>Pães frescos</p>
                 </div>
               </div>
 

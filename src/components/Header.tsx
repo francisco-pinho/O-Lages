@@ -12,10 +12,10 @@ export default function Header() {
       <div className="container-custom">
         {/* Top bar */}
         <div className="header-top">
-          <span>📍 Entregamos em toda a cidade</span>
+          <span>A melhor qualidade sempre!</span>
           <div className="header-top-right">
-            <span>📞 (11) 1234-5678</span>
-            <span>🕒 Seg-Sáb: 7h às 22h</span>
+            <span>📞 (351) </span>
+            <span>🕒 Seg-Sex: 7:30h às 19h</span>
           </div>
         </div>
         
@@ -46,7 +46,7 @@ export default function Header() {
             {/* User actions */}
             <div className="header-actions">
               <Link href="/conta" className="header-link">
-                👤 Minha Conta
+                👤 A Minha Conta
               </Link>
               <Link href="/carrinho" className="header-link">
                 🛒 Carrinho
