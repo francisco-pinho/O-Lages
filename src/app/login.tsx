@@ -43,6 +43,13 @@ export default function LoginPage() {
         <button type="submit" style={{ width: "100%", padding: 12, borderRadius: 6, background: "#744012", color: "white", fontWeight: 600, border: "none" }}>
           Entrar
         </button>
+        <button
+          type="button"
+          style={{ width: "100%", padding: 12, borderRadius: 6, background: "#bd681cff", color: "white", fontWeight: 600, border: "none", marginTop: 12 }}
+          onClick={() => window.location.href = '/registo'}
+        >
+          Criar Conta
+        </button>
       </form>
     </div>
   );
