@@ -39,7 +39,7 @@ export default function RegistoPage() {
           padding: 32,
           borderRadius: 12,
           boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
-          minWidth: 320,
+          minWidth: 380,
           minHeight: 520,
           display: 'flex',
           flexDirection: 'column',
@@ -47,7 +47,24 @@ export default function RegistoPage() {
         }}
       >
         <h2 style={{ marginBottom: 24, textAlign: "center" }}>Criar Conta</h2>
-        {fieldErrors.name && <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2 }}>{fieldErrors.name}</div>}
+        {fieldErrors.name && (
+          <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 18,
+              height: 18,
+              borderRadius: '50%',
+              background: '#fde68a',
+              color: '#b45309',
+              fontWeight: 700,
+              fontSize: 13,
+              marginRight: 4
+            }}>i</span>
+            {fieldErrors.name}
+          </div>
+        )}
         <input
           type="text"
           placeholder="Nome"
@@ -55,7 +72,24 @@ export default function RegistoPage() {
           onChange={e => setName(e.target.value)}
           style={{ width: "100%", marginBottom: 16, padding: 10, borderRadius: 6, border: "1px solid #ddd" }}
         />
-        {fieldErrors.email && <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2 }}>{fieldErrors.email}</div>}
+        {fieldErrors.email && (
+          <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 18,
+              height: 18,
+              borderRadius: '50%',
+              background: '#fde68a',
+              color: '#b45309',
+              fontWeight: 700,
+              fontSize: 13,
+              marginRight: 4
+            }}>i</span>
+            {fieldErrors.email}
+          </div>
+        )}
         <input
           type="email"
           placeholder="E-mail"
@@ -63,7 +97,24 @@ export default function RegistoPage() {
           onChange={e => setEmail(e.target.value)}
           style={{ width: "100%", marginBottom: 16, padding: 10, borderRadius: 6, border: "1px solid #ddd" }}
         />
-        {fieldErrors.nif && <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2 }}>{fieldErrors.nif}</div>}
+        {fieldErrors.nif && (
+          <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 18,
+              height: 18,
+              borderRadius: '50%',
+              background: '#fde68a',
+              color: '#b45309',
+              fontWeight: 700,
+              fontSize: 13,
+              marginRight: 4
+            }}>i</span>
+            {fieldErrors.nif}
+          </div>
+        )}
         <input
           type="text"
           placeholder="NIF"
@@ -71,7 +122,24 @@ export default function RegistoPage() {
           onChange={e => setNif(e.target.value)}
           style={{ width: "100%", marginBottom: 16, padding: 10, borderRadius: 6, border: "1px solid #ddd" }}
         />
-        {fieldErrors.morada && <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2 }}>{fieldErrors.morada}</div>}
+        {fieldErrors.morada && (
+          <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 18,
+              height: 18,
+              borderRadius: '50%',
+              background: '#fde68a',
+              color: '#b45309',
+              fontWeight: 700,
+              fontSize: 13,
+              marginRight: 4
+            }}>i</span>
+            {fieldErrors.morada}
+          </div>
+        )}
         <input
           type="text"
           placeholder="Morada"
@@ -79,7 +147,24 @@ export default function RegistoPage() {
           onChange={e => setMorada(e.target.value)}
           style={{ width: "100%", marginBottom: 16, padding: 10, borderRadius: 6, border: "1px solid #ddd" }}
         />
-        {fieldErrors.password && <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2 }}>{fieldErrors.password}</div>}
+        {fieldErrors.password && (
+          <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 18,
+              height: 18,
+              borderRadius: '50%',
+              background: '#fde68a',
+              color: '#b45309',
+              fontWeight: 700,
+              fontSize: 13,
+              marginRight: 4
+            }}>i</span>
+            {fieldErrors.password}
+          </div>
+        )}
         <input
           type="password"
           placeholder="Password"
@@ -87,7 +172,24 @@ export default function RegistoPage() {
           onChange={e => setPassword(e.target.value)}
           style={{ width: "100%", marginBottom: 16, padding: 10, borderRadius: 6, border: "1px solid #ddd" }}
         />
-        {fieldErrors.confirm && <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2 }}>{fieldErrors.confirm}</div>}
+        {fieldErrors.confirm && (
+          <div style={{ color: '#dc2626', fontSize: 13, marginBottom: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
+            <span style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 18,
+              height: 18,
+              borderRadius: '50%',
+              background: '#fde68a',
+              color: '#b45309',
+              fontWeight: 700,
+              fontSize: 13,
+              marginRight: 4
+            }}>i</span>
+            {fieldErrors.confirm}
+          </div>
+        )}
         <input
           type="password"
           placeholder="Confirmar Password"
