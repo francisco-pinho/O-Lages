@@ -1,3 +1,4 @@
+"use client";
 import Header from '@/components/Header';
 import Image from 'next/image';
 
@@ -17,7 +18,13 @@ export default function Home() {
           <p className="hero-subtitle animate-slide-up">
             Os melhores produtos com os melhores preços!
           </p>
-          <button className="btn btn-primary">
+          <button
+            className="btn btn-primary"
+            onClick={() => {
+              const section = document.getElementById('categorias-destaque');
+              if (section) section.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             Começar a Comprar 🛒
           </button>
         </div>
@@ -25,7 +32,7 @@ export default function Home() {
         </section>
 
         {/* Categorias em Destaque */}
-        <section className="section-padding" style={{ backgroundColor: 'var(--gray-50)' }}>
+  <section id="categorias-destaque" className="section-padding" style={{ backgroundColor: 'var(--gray-50)' }}>
           <div className="container-custom">
         <h2 style={{ textAlign: 'center', marginBottom: '3rem', color: 'var(--gray-800)' }}>
           Categorias em Destaque
@@ -126,9 +133,13 @@ export default function Home() {
           {/* Oferta 2 */}
           <div className="card-product">
             <div className="product-image">
-          <div className="card-image">
-            <span style={{ fontSize: '4.5rem' }}>🍌</span>
-          </div>
+              <Image
+                src="/banana.avif"
+                alt="Banana Prata"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 300px"
+              />
             </div>
             <div className="card-content">
           <h3 className="card-title">Banana Prata</h3>
@@ -146,9 +157,13 @@ export default function Home() {
           {/* Oferta 3 */}
           <div className="card-product">
             <div className="product-image">
-          <div className="card-image">
-            <span style={{ fontSize: '4.5rem' }}>🥕</span>
-          </div>
+              <Image
+                src="/cenoura.jpeg"
+                alt="Cenoura Orgânica"
+                fill
+                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 768px) 100vw, 300px"
+              />
             </div>
             <div className="card-content">
           <h3 className="card-title">Cenoura Orgânica</h3>
