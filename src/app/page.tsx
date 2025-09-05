@@ -102,7 +102,6 @@ export default function Home() {
           {/* Oferta 1 */}
           <div className="card-product">
             <div className="product-image">
-          <div className="card-image" style={{ position: 'relative', width: '100%', height: '100px' }}>
             <Image
               src="/maca.jpg"
               alt="Maçã Gala Premium"
@@ -110,7 +109,6 @@ export default function Home() {
               style={{ objectFit: 'cover' }}
               sizes="(max-width: 768px) 100vw, 300px"
             />
-          </div>
             </div>
             <div className="card-content">
           <h3 className="card-title">Maçã Gala Premium</h3>

@@ -416,6 +416,7 @@ p {
 }
 
 .product-image {
+    position: relative;
     height: 14rem;
     background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
 }
